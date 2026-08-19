@@ -17,6 +17,7 @@ Projekt jest celowo niewielki: ma kod aplikacji, testy, dokumentację, konfigura
 │       └── planner.py
 ├── tests/
 │   └── test_planner.py
+├── Makefile
 ├── .gitignore
 ├── LICENSE
 ├── pyproject.toml
@@ -55,6 +56,17 @@ Możesz też uruchomić moduł bez instalacji:
 
 ```bash
 PYTHONPATH=src python -m kieszonkowy_planer.cli "Napisać README:2" "Dodać testy:1"
+```
+
+## Komendy developerskie
+
+Najczęstsze zadania można uruchomić przez `make`:
+
+```bash
+make help
+make install
+make run
+make test
 ```
 
 ## Testy

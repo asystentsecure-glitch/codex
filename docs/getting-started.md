@@ -29,6 +29,15 @@ Testy w `tests/test_planner.py` pokazują najważniejsze przypadki:
 
 ## Typowy workflow
 
+Najprostszy workflow korzysta z komend z `Makefile`:
+
+```bash
+make test
+make run
+```
+
+Te same kroki można wykonać bez `make`:
+
 ```bash
 PYTHONPATH=src python -m unittest discover -s tests
 PYTHONPATH=src python -m kieszonkowy_planer.cli "Dodać funkcję:1" "Napisać dokumentację:2"
